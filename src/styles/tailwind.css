@@ -3,3 +3,121 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+  margin: 0;
+  padding: 0;
+}
+
+.react-tabs__tab {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: none;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.react-tabs__tab--selected {
+  background: #4a5668;
+  color: white;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.react-tabs__tab:focus {
+  box-shadow: 0 0 5px hsl(208, 99%, 50%);
+  border-color: hsl(208, 99%, 50%);
+  outline: none;
+}
+
+.react-tabs__tab:focus:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  left: -4px;
+  right: -4px;
+  bottom: -5px;
+  background: #fff;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+.bmc-button img {
+  height: 34px !important;
+  width: 35px !important;
+  margin-bottom: 1px !important;
+  box-shadow: none !important;
+  border: none !important;
+  vertical-align: middle !important;
+}
+.bmc-button {
+  padding: 7px 15px 7px 10px !important;
+  line-height: 35px !important;
+  height: 51px !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  color: #ffffff !important;
+  background-color: #000000 !important;
+  border-radius: 8px !important;
+  border: 1px solid transparent !important;
+  font-size: 24px !important;
+  letter-spacing: 0.6px !important;
+  box-shadow: 0px 1px 2px rgba(190, 190, 190, 0.5) !important;
+  -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+  margin: 0 auto !important;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+.bmc-button:hover,
+.bmc-button:active,
+.bmc-button:focus {
+  -webkit-box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+  text-decoration: none !important;
+  box-shadow: 0px 1px 2px 2px rgba(190, 190, 190, 0.5) !important;
+  opacity: 0.85 !important;
+  color: #ffffff !important;
+}

@@ -3,7 +3,6 @@ import { LiveProvider, LiveEditor } from "react-live"
 import theme from "prism-react-renderer/themes/nightOwl"
 import { Resizable } from "re-resizable"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
-import "../styles/live-component-tabs.css"
 import Frame from "react-frame-component"
 import { CopyButton } from "./index"
 
@@ -21,7 +20,7 @@ const WithComponentPreview = ({
       <LiveProvider code={Code}>
         <Tabs className="max-w-5xl mx-auto">
           <div className="flex items-end justify-end">
-            <TabList className="">
+            <TabList>
               <Tab>Preview</Tab>
               <Tab>Code</Tab>
             </TabList>

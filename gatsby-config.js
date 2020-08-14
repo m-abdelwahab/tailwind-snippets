@@ -33,10 +33,21 @@ module.exports = {
         postCssPlugins: [require("tailwindcss")("./tailwind.config.js")],
       },
     },
+    // purgeCSS removes selectors with dashes
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         tailwind: true,
+        whitelist: [
+          "react-tabs",
+          "react-tabs__tab-list",
+          "react-tabs__tab",
+          "react-tabs__tab--selected",
+          "react-tabs__tab:focus",
+          "react-tabs__tab:focus:after",
+          "react-tabs__tab-panel",
+          "react-tabs__tab-panel--selected",
+        ],
       },
     },
     "gatsby-plugin-typescript",

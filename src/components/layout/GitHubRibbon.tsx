@@ -1,5 +1,4 @@
 import React from "react";
-import '../../styles/github-animation.css'
 
 const GitHubRibbon = () => {
   return (

@@ -1,5 +1,4 @@
 import React from "react"
-import "../styles/buy-me-coffee.css"
 import { Layout } from "../components/layout"
 import SEO from "../components/seo"
 
