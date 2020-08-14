@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./src/*.tsx"],
+  purge: false,
   target: "relaxed",
   prefix: "",
   important: false,
