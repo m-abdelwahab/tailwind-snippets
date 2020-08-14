@@ -8,7 +8,7 @@ const About = () => {
     <Layout>
       <SEO title="about" />
 
-      <article className=" mx-12 md:mx-auto  mt-32 prose lg:prose-xl mb-16">
+      <article className="h-screen mx-12 md:mx-auto mt-40 prose lg:prose-xl mb-16">
         <h1>About This project</h1>
         <p>
           The reason I created this project was because I really like using a

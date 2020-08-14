@@ -3,7 +3,7 @@ import Logo from "../../images/tailwind-ui-logo.svg";
 
 const TailwindUIBanner = () => {
   const initialState = () =>
-    Boolean(window.localStorage.getItem("hideBanner") || null);
+    Boolean(typeof window !== 'undefined'? window.localStorage.getItem("hideBanner") : null);
   const [isHidden, setIsHidden] = useState(initialState);
   useEffect(() => {
     localStorage.setItem("hideBanner", JSON.stringify(isHidden));

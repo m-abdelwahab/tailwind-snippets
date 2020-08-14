@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Navbar = () => {
   return (
-    <nav className="z-10 fixed top-0 flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
+    <nav className="flex flex-col text-center content-center sm:flex-row sm:text-left sm:justify-between py-2 px-6 bg-white shadow sm:items-baseline w-full">
       <div className="mb-2 sm:mb-0 flex flex-row">
        
         <div className="ml-2">
