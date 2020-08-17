@@ -1,0 +1,53 @@
+[
+  {
+    "layouts": [
+      {
+        "image": {
+          "src": "../images/layouts/two-column-grid.png",
+          "alt": "Two Column Grid Layout"
+        },
+        "title": "Two Column Grid",
+        "link": "/layouts/two-column-grid",
+        "numOfComponents": ""
+      },
+      {
+        "image": {
+          "src": "../images/layouts/features.png",
+          "alt": "Features Section"
+        },
+        "title": "Features",
+        "link": "/layouts/features",
+        "numOfComponents": ""
+      }
+    ],
+    "components": [
+      {
+        "image": {
+          "src": "../images/components/button.png",
+          "alt": "Button component"
+        },
+        "title": "Button",
+        "link": "/components/button",
+        "numOfComponents": ""
+      },
+      {
+        "image": {
+          "src": "../images/components/navbar.png",
+          "alt": "Navbar component"
+        },
+        "title": "Navbar",
+        "link": "/components/navbar",
+        "numOfComponents": "3"
+      },
+      {
+        "image": {
+          "src": "../images/components/avatar.png",
+          "alt": "Avatar component"
+        },
+        "title": "Avatar",
+        "link": "/components/avatar",
+        "numOfComponents": ""
+      }
+    ]
+  }
+]

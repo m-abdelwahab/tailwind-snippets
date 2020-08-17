@@ -11,7 +11,7 @@ const CopyButton = ({ text }: CopyButtonProps) => {
   return (
     <button
       onClick={() => clipboard.copy(text)}
-      className="mb-1  bg-gray-700 text-white rounded py-2 px-6 ml-5"
+      className="mb-1  bg-blue-500 text-white rounded py-2 px-6 ml-5"
     >
       {clipboard.copied ? (
         <p className="text-sm">copied!</p>

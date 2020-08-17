@@ -1,13 +1,12 @@
 import React from "react"
-import { Layout } from "../components/layout"
 import SEO from "../components/seo"
 
 const About = () => {
   return (
-    <Layout>
+    <>
       <SEO title="about" />
 
-      <article className="h-screen mx-12 md:mx-auto mt-40 prose lg:prose-xl mb-16">
+      <article className="h-screen mx-12 md:mx-auto mt-24 prose lg:prose-xl mb-16">
         <h1>About This project</h1>
         <p>
           The reason I created this project was because I really like using a
@@ -36,7 +35,7 @@ const About = () => {
           </span>
         </a>
       </article>
-    </Layout>
+    </>
   )
 }
 

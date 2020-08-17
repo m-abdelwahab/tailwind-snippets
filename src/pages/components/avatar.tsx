@@ -1,12 +1,9 @@
 import React from "react"
 import { WithComponentPreview } from "../../components"
-import { Layout } from "../../components/layout"
 
 const Avatar = () => {
   return (
-    <Layout>
       <WithComponentPreview Code={code} Component={AvatarComponent} />
-    </Layout>
   )
 }
 

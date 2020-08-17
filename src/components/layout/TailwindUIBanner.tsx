@@ -12,7 +12,7 @@ const TailwindUIBanner = () => {
   const handleClick = () => setIsHidden(true);
 
   return !isHidden ? (
-    <div className="sticky bottom-0 py-5 w-full max-w-full px-2 sm:px-4">
+    <div className="sticky bottom-0 py-5 container mx-auto px-2 sm:px-4">
       <div className="p-2 rounded-lg bg-gray-900 shadow-lg sm:p-3">
         <div className="flex items-center justify-between flex-wrap">
           <div className="w-0 flex-1 flex items-center">

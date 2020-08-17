@@ -13,6 +13,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/data/`,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -51,5 +58,17 @@ module.exports = {
       },
     },
     "gatsby-plugin-typescript",
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        useAutoGen: true,
+        exclude: [
+          `/dev-404-page/`,
+          `/404/`,
+          `/404.html`,
+          `/offline-plugin-app-shell-fallback/`,
+        ],
+      },
+    },
   ],
 }

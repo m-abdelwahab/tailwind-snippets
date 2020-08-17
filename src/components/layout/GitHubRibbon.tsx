@@ -12,7 +12,7 @@ const GitHubRibbon = () => {
         height="80"
         viewBox="0 0 250 250"
         style={{
-          fill: "#151513",
+          fill: "#4299e1",
           color: "#fff",
           position: "fixed",
           top: "0",

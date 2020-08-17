@@ -26,7 +26,7 @@ const WithComponentPreview = ({
             </TabList>
             <CopyButton text={Code} />
           </div>
-          <TabPanel className="bg-gray-300">
+          <TabPanel className="bg-gray-300 shadow-xl rounded-lg">
             <Resizable
               handleStyles={{
                 right: {
@@ -34,7 +34,17 @@ const WithComponentPreview = ({
                   borderRadius: "10px",
                 },
               }}
-              className="border-gray-400 border-solid border-2"
+              enable={{
+                top: false,
+                right: true,
+                bottom: true,
+                left: false,
+                topRight: false,
+                bottomRight: false,
+                bottomLeft: false,
+                topLeft: false,
+              }}
+              className="border-gray-400 border-solid border-2 rounded-lg"
               defaultSize={{
                 width: "100%",
                 height: 720,
@@ -44,7 +54,7 @@ const WithComponentPreview = ({
               maxHeight={720}
             >
               <Frame
-                className="w-full h-full"
+                className="w-full h-full rounded-xl"
                 head={
                   <link
                     href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
@@ -57,7 +67,11 @@ const WithComponentPreview = ({
             </Resizable>
           </TabPanel>
           <TabPanel>
-            <LiveEditor disabled={true} className="mb-2" theme={theme} />
+            <LiveEditor
+              disabled={true}
+              className="mb-2 rounded-lg shadow-lg"
+              theme={theme}
+            />
           </TabPanel>
         </Tabs>
       </LiveProvider>

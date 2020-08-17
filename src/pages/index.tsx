@@ -1,12 +1,53 @@
 import React from "react"
-import { Layout } from "../components/layout"
+import { Hero, Featured } from "../components"
+import { graphql, useStaticQuery } from "gatsby"
 
-const IndexPage = () => (
-  <Layout>
-    <div className="h-screen flex items-center justify-center">
-      <h1>Hello World!</h1>
-    </div>
-  </Layout>
-)
+const IndexPage = () => {
+  const featuredData = useStaticQuery(graphql`
+    query {
+      featuredJson {
+        layouts {
+          title
+          link
+          numOfComponents
+          image {
+            alt
+            src {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+        components {
+          title
+          link
+          numOfComponents
+          image {
+            alt
+            src {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+  const { components, layouts } = featuredData.featuredJson
+  console.log(components)
+  return (
+    <>
+      <Hero />
+      <Featured title="Layouts" data={layouts} link="/layouts" />
+      <Featured title="Components" data={components} link="/components" />
+    </>
+  )
+}
 
 export default IndexPage
