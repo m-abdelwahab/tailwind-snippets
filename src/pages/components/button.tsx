@@ -1,14 +1,14 @@
 import React from "react"
 import { WithComponentPreview } from "../../components"
-import { Breadcrumb } from "gatsby-plugin-breadcrumb"
+// import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
 const Button = ({ pageContext }) => {
-  const {
-    breadcrumb: { crumbs },
-  } = pageContext
+  // const {
+  //   breadcrumb: { crumbs },
+  // } = pageContext
   return (
     <div>
-      <Breadcrumb crumbs={crumbs} crumbSeparator=" > " />
+      {/* <Breadcrumb crumbs={crumbs} crumbSeparator=" > " /> */}
       <WithComponentPreview Code={code} Component={ButtonComponent} />
     </div>
   )
